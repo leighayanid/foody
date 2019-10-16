@@ -1,0 +1,26 @@
+.about {
+  background: white;
+  width: 100vw;
+  height: 60vh;
+  margin: 5rem 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    .about__info {
+      padding: 2rem;
+
+      p {
+        color: black;
+        font-family: inherit;
+        max-width: 80%;
+        
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

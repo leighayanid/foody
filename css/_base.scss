@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px
+}
+
+body {
+  line-height: 1.5;
+  color: #000000; 
+  font-family: 'Roboto', serif;
+}
+
+.container {
+  padding: 0 10rem;
+
+  @media screen and (max-width: 600px) {
+    padding: 0 2rem;
+  }
+}
