@@ -219,7 +219,7 @@ h4 {
 
 .book {
   width: 100vw;
-  height: 50vh;
+  height: auto;
   padding: 5rem 0;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85))), url("/img/bg4.png");
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/img/bg4.png");
@@ -252,6 +252,12 @@ h4 {
   border: none;
   background: white;
   width: 100%;
+}
+
+.book button {
+  margin: 2rem 0;
+  padding: 1.2rem 4rem;
+  font-size: 1.25rem;
 }
 
 .btn {
