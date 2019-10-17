@@ -9,14 +9,14 @@
 }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%; //10px
 }
 
 body {
   line-height: 1.5;
-  color: #000000; 
+  color: #000000;
   font-family: 'Roboto', serif;
+  box-sizing: border-box;
 }
 
 .container {
