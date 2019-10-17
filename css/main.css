@@ -67,10 +67,20 @@ h2 {
   font-size: 3rem;
   color: #4AAB00;
   font-family: 'Crimson Text', serif;
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: 2.5rem;
+  color: #4AAB00;
+  font-family: 'Crimson Text', serif;
+  border-bottom: 2px solid #4AAB00;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 2rem;
+  color: #4AAB00;
   font-family: 'Crimson Text', serif;
 }
 
@@ -144,6 +154,67 @@ h3 {
   -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 1rem;
+}
+
+.our-menu {
+  width: 100vw;
+  padding: 5rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.85))), url("/img/bg1.png");
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("/img/bg1.png");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-menu p {
+  color: black;
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 1rem;
+  height: auto;
+  width: 100vw;
+  padding: 0 10rem;
+}
+
+.menu__items {
+  width: 100%;
+  padding: 2rem 10rem;
+}
+
+.menu__items-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.menu__items-info p {
+  margin: 0;
+}
+
+.menu__items-info h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .btn {
