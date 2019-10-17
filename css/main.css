@@ -139,8 +139,8 @@ h3 {
 .specialties__items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(120px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 1rem;
 }
 
@@ -157,6 +157,10 @@ h3 {
   background: white;
   width: 100%;
   padding-bottom: 1rem;
+}
+
+.card:hover {
+  cursor: pointer;
 }
 
 .card img {

@@ -3,6 +3,10 @@
   width: 100%;
   padding-bottom: 1rem;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   img {
     width: 100%;
     padding: 0;
