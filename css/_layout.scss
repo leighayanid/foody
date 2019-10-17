@@ -1,8 +1,12 @@
 .about {
   background: white;
   width: 100vw;
-  height: 60vh;
   margin: 5rem 0;
+
+  @include respond(tab-port) {
+    height: auto;
+    margin: 2.5rem 0;
+  }
 
   .container {
     display: grid;
@@ -15,12 +19,35 @@
         color: black;
         font-family: inherit;
         max-width: 80%;
-        
       }
     }
 
     img {
-      width: 100%;
+      width: 85%;
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
     }
+  }
+}
+
+.specialties {
+  width: 100vw;
+  padding: 5rem 0;
+  background-image: linear-gradient(to right bottom, rgba(black, .5), rgba(black, .5)), url('/img/bg3.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat;
+    padding: 0 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-gap: 1rem;
   }
 }

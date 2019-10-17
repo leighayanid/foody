@@ -58,27 +58,33 @@ body {
 
 p {
   color: #ffffff;
-  margin: 1.5rem 0;
+  margin: 1.75rem 0;
   font-size: 1.2rem;
   max-width: 60%;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #4AAB00;
   font-family: 'Crimson Text', serif;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-family: 'Crimson Text', serif;
 }
 
 .about {
   background: white;
   width: 100vw;
-  height: 60vh;
   margin: 5rem 0;
+}
+
+@media (max-width: 56.25em) {
+  .about {
+    height: auto;
+    margin: 2.5rem 0;
+  }
 }
 
 .about .container {
@@ -99,7 +105,46 @@ h3 {
 }
 
 .about .container img {
-  width: 100%;
+  width: 85%;
+}
+
+@media (max-width: 56.25em) {
+  .about .container img {
+    width: 100%;
+  }
+}
+
+.specialties {
+  width: 100vw;
+  padding: 5rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/bg3.png");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/bg3.png");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.specialties__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat;
+      grid-template-columns: repeat;
+  padding: 0 5rem;
+  -ms-grid-columns: (minmax(170px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-gap: 1rem;
 }
 
 .btn {
@@ -109,6 +154,23 @@ h3 {
   padding: .8rem 1.3rem;
   border-radius: .35rem;
   font-size: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 0;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.card img {
+  width: 100%;
+  padding: 0;
+}
+
+.card p {
+  color: black;
+  margin: 0 auto;
 }
 
 .header {
