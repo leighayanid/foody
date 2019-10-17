@@ -44,8 +44,10 @@
   align-items: center;
 
   &__items {
+    padding: 0 10rem;
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 1.2rem;
+    grid-gap: 1rem;
   }
 }
