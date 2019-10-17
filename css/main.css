@@ -217,6 +217,43 @@ h4 {
   right: 0;
 }
 
+.book {
+  width: 100vw;
+  height: 50vh;
+  padding: 5rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85))), url("/img/bg4.png");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/img/bg4.png");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.book__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.book__select-info {
+  margin: 1rem 2rem;
+}
+
+.book__select-info select {
+  padding: .5rem 2rem;
+  border: none;
+  background: white;
+  width: 100%;
+}
+
 .btn {
   background: #4AAB00;
   color: white;
