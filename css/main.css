@@ -367,6 +367,10 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
 }
 
 .navigation__wrapper--links {
@@ -391,7 +395,7 @@ h4 {
 
 .navigation__wrapper--links li a {
   color: white;
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   text-decoration: none;
   border-right: 2px solid white;
   padding-right: 1rem;
