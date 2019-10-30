@@ -9,6 +9,7 @@
   }
 
   .container {
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
@@ -43,12 +44,20 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(tab-phone) {
+    padding: 0;
+  }
+
   &__items {
     padding: 0 10rem;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 1rem;
+
+    @include respond(tab-phone) {
+      padding: 0;
+    }
   }
 }
 
@@ -62,6 +71,10 @@
   flex-direction: column;
   align-items: center;
 
+  @include respond(tab-phone) {
+    padding: 0;
+  }
+
   p {
     color: black;
   }
@@ -69,15 +82,25 @@
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 1rem;
   height: auto;
   width: 100vw;
   padding: 0 10rem;
 
+  @include respond(tab-port) {
+    padding: 0;
+    height: auto;
+  }
+
+
   &__items {
     width: 100%;
     padding: 2rem 10rem;
+
+    @include respond(tab-port) {
+      padding: .5rem;
+    }
 
     &-info {
       display: flex;
@@ -144,7 +167,8 @@
   display: flex;
   justify-content: space-around;
 
-  h2, p {
+  h2,
+  p {
     margin: 0;
   }
 }
