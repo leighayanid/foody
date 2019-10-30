@@ -182,8 +182,8 @@ h4 {
 .menu {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-gap: 1rem;
   height: auto;
   width: 100vw;
@@ -293,6 +293,24 @@ h4 {
 .footer h2,
 .footer p {
   margin: 0;
+}
+
+.social__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__media .fab {
+  border: 1px solid white;
+  color: white;
+  font-size: 1.25rem;
+  padding: .5rem;
+  margin: 1rem;
+}
+
+.social__media .fa-facebook-f {
+  margin-left: 0;
 }
 
 .btn {

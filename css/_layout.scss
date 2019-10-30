@@ -82,7 +82,7 @@
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-gap: 1rem;
   height: auto;
   width: 100vw;
@@ -170,5 +170,21 @@
   h2,
   p {
     margin: 0;
+  }
+}
+
+.social__media {
+  display: flex;
+
+  .fab {
+    border: 1px solid white;
+    color: white;
+    font-size: 1.25rem;
+    padding: .5rem;
+    margin: 1rem;
+  }
+
+  .fa-facebook-f {
+    margin-left: 0;
   }
 }
