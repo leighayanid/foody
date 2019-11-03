@@ -12,6 +12,10 @@
     flex-direction: row;
     align-items: center;
     height: 10vh;
+
+    @include respond(tab-port) {
+      padding: 0 1rem;
+    }
   }
 
   &__wrapper--links {
@@ -29,6 +33,12 @@
         text-decoration: none;
         border-right: 2px solid white;
         padding-right: 1rem;
+      }
+    }
+
+    button {
+      @include respond(tab-port) {
+        visibility: hidden;
       }
     }
   }
